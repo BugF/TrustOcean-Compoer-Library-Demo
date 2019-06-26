@@ -8,112 +8,156 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>TrustOcean SSL PHP Composer Library - MIT OpenSource Project</title>
+    <style>
+      .dns-record-container{
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+      }
+      .dns-content{
+        padding: 5px 10px;
+      }
+      .hostname-div{
+        background: #f8f9fa;
+        padding: 5px 10px;
+        border-bottom: 1px solid #ccc;
+      }
+    </style>
   </head>
   <body style="background-color: #f8f9fa;">
-    <div class="container">
-  <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h2>Checkout form</h2>
-    <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">
+      <a href="/">
+      <img src="https://www.trustocean.com/wp-content/uploads/2019/logo_wt.svg" alt=""  height="35">
+      </a>
+    </h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="https://github.com/londry/TrustOcean-Library-Composer" target="_blank">GitHub</a>
+      <a class="p-2 text-dark" href="https://packagist.org/packages/londry/trustoceanssl-composer-library" target="_blank">Packgist</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="https://www.trustocean.com/partner-program" target="_blank">获取API账户</a>
   </div>
+    <div class="container">
+    <div class="py-5 text-center">
+
+      <h2>TrustOcean SSL PHP Composer Library</h2>
+      <p class="lead">此项目为TrustOcean SSL Reseller API所做的一个PHP Composer Library简单实现，旨在帮助各PHP开发者更加容易的集成来自于TrustOcean的全球可信的数字证书产品到第三方系统，以实现插件、自动签发、自动续期等功能.</p>
+      <p>
+
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/londry/TrustOcean-Compoer-Library-Demo/subscription" data-size="large" data-show-count="true" aria-label="Watch londry/TrustOcean-Compoer-Library-Demo on GitHub">Watch</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/londry/TrustOcean-Compoer-Library-Demo" data-size="large" data-show-count="true" aria-label="Star londry/TrustOcean-Compoer-Library-Demo on GitHub">Star</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/londry/TrustOcean-Compoer-Library-Demo/fork" data-size="large" data-show-count="true" aria-label="Fork londry/TrustOcean-Compoer-Library-Demo on GitHub">Fork</a>
+        <!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/londry/TrustOcean-Compoer-Library-Demo/issues" data-size="large" data-show-count="true" aria-label="Issue londry/TrustOcean-Compoer-Library-Demo on GitHub">Issue</a>
+      </p>
+    </div>
 
   <div class="row">
-    <div class="col-md-4 order-md-2 mb-4">
-      <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">Your cart</span>
-        <span class="badge badge-secondary badge-pill">3</span>
-      </h4>
-      <ul class="list-group mb-3">
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Product name</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$12</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Second product</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$8</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Third item</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between bg-light">
-          <div class="text-success">
-            <h6 class="my-0">Promo code</h6>
-            <small>EXAMPLECODE</small>
-          </div>
-          <span class="text-success">-$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Total (USD)</span>
-          <strong>$20</strong>
-        </li>
-      </ul>
-
-      <form class="card p-2">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Promo code">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
-        </div>
-      </form>
+    <div class="col-md-6 order-md-1 mb-4">
+      <h3>Tips</h3>
+      <p>
+        此扩展包和本站点的源代码均基于MIT协议授权, 您可以通过多种方式获取到源代码进行学习或项目开发。
+      </p>
+      <p>
+        <a href="https://packagist.org/packages/londry/trustoceanssl-composer-library" target="_blank" class="btn btn-outline-success">从 Packagist 安装此Composer包</a>
+      </p>
+      <p><code>composer require londry/trustoceanssl-composer-library</code></p>
+      <p>
+        <a href="https://github.com/londry/TrustOcean-Compoer-Library-Demo" target="_blank" class="btn btn-outline-primary">从 Github 获取此站点的源代码</a>
+      </p>
+      <p><code>git clone https://github.com/londry/TrustOcean-Compoer-Library-Demo.git</code></p>
+      <p><a href="//shang.qq.com/wpa/qunwpa?idkey=52333cccfa2c814e6befacfdc2ede417544f01f6c2216033074de4ffada8295b" target="_blank" class="btn btn-outline-info">加入开发者交流QQ群获取帮助</a></p>
     </div>
-    <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">免费申请 TrustOcean Encryption365 SSL</h4>
-      <form class="needs-validation" novalidate="">
+    <div class="col-md-6 order-md-2">
+      <h4 class="mb-3">申请 TrustOcean Encryption365 SSL</h4>
+      {% if dcv_info is not defined %}
+          {% if error is defined %}
+            <div class="alert alert-danger" role="alert">
+              出错: {{ error }}
+            </div>
+        {% endif %}
+      <form class="needs-validation" novalidate="" method="post">
+        <input name="action" value="apply" hidden>
+        {% if browserWindowHash is defined %}
+        <input name="browserWindowHash" value="{{ browserWindowHash }}" hidden>
+        {% endif %}
         <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-12 mb-3">
             <label for="firstName">CSR代码 (PEM文本内容)</label>
-            <textarea type="text" class="form-control" style="min-height: 285px;" id="csr_code" placeholder="" required="required"></textarea>
+            <textarea type="text" class="form-control" style="min-height: 285px;" id="csr_code" name="csr_code" placeholder="-----BEGIN CERTIFICATE REQUEST-----
+PASTEvxxxxxxxxxxxxxYourCsrCodeHere
+PASTEvxxxxxxxxxxxxxYourCsrCodeHere
+PASTEvxxxTRUSTxxxxYourCsrCodeHere
+PASTEvxxxOCEANxxxxYourCsrCodeHere
+PASTEvxxxxxxxxxxxxxYourCsrCodeHere
+PASTEvxxxxxxxxxxxxxYourCsrCodeHere
+PASTExxxxxxxxxxxxxxYourCsrCodeHere
+-----END CERTIFICATE REQUEST-----" required="required"></textarea>
             <div class="invalid-feedback">
               Valid first name is required.
             </div>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-12 mb-3">
             <label for="lastName">需保护的域名(每行一条)</label>
-            <textarea type="text" class="form-control" style="min-height: 285px;" id="domains" placeholder="" required="required"></textarea>
+            <textarea type="text" class="form-control" style="min-height: 285px;" id="domains" name="domains" placeholder="www.domain1.com
+domain1.com
+*.domain2.com
+my.domain3.com
+domain3.com
+" required="required"></textarea>
             <div class="invalid-feedback">
               Valid last name is required.
             </div>
           </div>
         </div>
-
         <div class="mb-3">
           <label for="username">Email</label>
           <div class="input-group">
-            <input type="text" class="form-control" id="contact_email" placeholder="填写用于接收证书的电子邮箱地址" required="">
+            <input type="text" class="form-control" id="contact_email" name="contact_email" placeholder="填写用于接收证书的电子邮箱地址" required="required">
             <div class="invalid-feedback" style="width: 100%;">
               Your username is required.
             </div>
           </div>
         </div>
-
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" type="submit">立即申请</button>
       </form>
+      {% else %}
+          <div class="">
+            <h5>OrderID: {{ order_id }}</h5>
+            <p>请您根据下列提示, 为各条域名新增对应的DNS CNAME解析记录来完成证书签发, 保持您的验证记录直到证书签发, 一旦(通常在您完成所有的解析记录后的10-60分钟内)签发将通过电子邮件发送给您(或您的垃圾箱): {{ contact_email }}。</p>
+          </div>
+          <p>
+            <a href="/" class="btn btn-info">返 回</a>
+          </p>
+          {% for dcvinfo in dcv_info%}
+          <div class="dns-record-container">
+            <div class="hostname-div">域名: {{ dcvinfo.topdomain }}</div>
+            <div class="dns-content">
+              <div>主机记录: <code>{{ dcvinfo.dns_host }}</code></div>
+              <div>解析类型: CNAME(别名)</div>
+              <div>指向(记录值): <code>{{ dcvinfo.dns_value }}</code></div>
+            </div>
+          </div>
+          {% endfor %}
+
+      {% endif %}
     </div>
   </div>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">© 2017-2019 Company Name</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
+    <p class="mb-1">© 2016-2019 西安乔客信息科技有限公司 | <a href="http://www.beian.miit.gov.cn" target="_blank">陕ICP备16011250号-2</a></p>
   </footer>
 </div>
     <!-- Optional JavaScript -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

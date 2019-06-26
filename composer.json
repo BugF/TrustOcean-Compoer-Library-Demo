@@ -35,12 +35,6 @@
         "symfony/test-pack": "*",
         "symfony/web-server-bundle": "4.3.*"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:londry/TrustOcean-Library-Composer.git"
-        }
-    ],
     "config": {
         "preferred-install": {
             "*": "dist"
